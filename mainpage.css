@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+section .menu .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+    justify-content: start;
+}
+section .menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: white;
+    position: unset;
+    left: 0;
+    z-index: 100;
+}
+section .menu ul{
+    font-family: serif;
+    margin: -5px 30px;
+    float: left;
+}
+section .menu ul li{
+    padding: 0px 7px;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+section .menu ul li a:hover{
+    color: teal;
+    text-decoration: underline;
+}
+section .menu ul li a{
+    display: block;
+    font-size: 17px;
+    padding: 22px 14px;
+    color: black;
+    text-decoration: none;
+}
+section .menu ul li ul{
+    display: none;
+    position: absolute;
+    background-color:white;
+    padding: 0px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 10px #089da1;
+}
+section .menu ul li:hover ul{
+    display: block;
+}
+section .menu ul li ul li a{
+    font-family: serif;
+    font-size: 15px;
+    padding: 12px 14px;   
+}
+section .menu ul li ul li{
+    text-align: left;
+    font-size: 8px;
+    width: 150px;
+    border-radius: 5px;
+}
+section .menu .searchbox input{
+    height: 36px;
+    width: 15rem;
+    border-radius: 16px;
+    margin-top: -10px;
+    margin-left: 190px;
+    border: 1px solid black;
+}
+section .menu .searchbox button{
+    border: 1px solid black;
+    background-color: #089da1;
+    height: 36px;
+    width: 70px;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+section .menu .searchbox button a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+section .menu .searchbox button:hover{
+    background-color: teal;
+    transition: 0.3s ease-in;
+}
+section .menu .searchbox button:hover a{
+    color: white;
+}
+section .menu .searchbox input:hover{
+    border: 3px solid teal;
+}
+
+marquee{
+    font-size: larger;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #089da1;
+    border-radius: 10px;
+}
+.container{
+    border-radius: 0px 2px 2px 0px;
+    border: 2px solid  #089da1;
+    display: inline-block;
+    height: 608px;
+    width: 300px;
+    position: fixed;
+    background-color: white;
+}
+.container a{
+    font-family: serif;
+    font-size: 18px;
+    display: grid;
+    border: 1px solid #089da1;
+    color: black;
+    text-decoration: none;
+    padding: 27.8px 40px;
+}
+.container a:hover{
+    text-decoration: underline;
+    color: teal;
+}
+.container a:first-child{
+    /* margin-bottom: 5px; */
+    height: 3px;
+    /* width: 10px; */
+    /* margin-top: 59px; */
+}
+.container a .logo{
+    display: inline-block;
+    margin-left: -5px;
+    margin-top: -15px;
+    color: black;
+}
+
+.container a .logo:hover{
+    color: green;
+    transition: 0.4s ease-in;
+}
+.cart-btn {
+    padding: 8px 20px;
+    background-color: #089da1;
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    
+  }
+  .cart-btn:hover {
+    background-color: teal;
+    transition: 5s;
+  }
+/* Filter options codes which is named as container2 in html */
+.container2{
+    background-color: white;
+    border-radius: 2px 0px 0px 0px;
+    border: 2px solid #089da1;
+    display: inline-block;
+    height: 337.5px;
+    width: 300px;
+    margin-left: 168vh;
+    position: fixed;
+    margin-top: 270px;
+}
+.container2 a{
+    /* border-radius: 20px; */
+    font-family: serif;
+    font-size: 18px;
+    display: flex;
+    /* border: 1px solid white; */
+    color: black;
+    text-decoration: none;
+    padding: 13px 30px;
+}
+.container2 button{
+    font-size: 17px;
+    font-family: serif;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 38%;
+    height: 25px;
+    width: 90px;
+    color: #089da1;
+    border: 1px solid teal;
+}
+.container2 button:hover{
+    color:white ;
+    background-color: teal;
+    transition: 0.5s ease-in;
+}
+section .container2 a .logo{
+    display: inline-block;
+    color: black;
+    margin-left: -5px;
+}
+section .container2 a:first-child{
+    height: 6px;
+}
+section .card{
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+  
+}
+
+.img1 {
+
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.img2 {
+
+    margin-left: 7%;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+
+.img3 {
+    margin-left: 15%;
+    margin-top: 5%;
+    text-align: left;
+   
+}
+
+ .img4{
+    margin-left: 21%;
+    margin-top: 5%;
+    text-align: left;
+
+}
+
+.order1 {
+    font-style: normal;
+    text-align: center;
+    margin-top: -25%;
+    margin-left: 9%;
+}
+
+.order2 {
+    font-style: normal;
+    text-align: center;
+    margin-top: -25%;
+    margin-left: 9%;
+}
+.order3 {
+    font-style: normal;
+    text-align: center;
+    margin-top: -25%;
+    margin-left: 6%;
+}
+.order4 {
+  font-style: normal;
+    text-align: center;
+    margin-top: -35%;
+    margin-left: -5%;
+}
+
+
+.order h4 {
+    margin-top: -1%;
+}
+
+.order h3 {
+    margin-left: 1%;
+    color: red;
+}
+
+.quantity {
+    font-style: normal;
+    font-size: medium;
+
+}
+
+.icon1 button {
+
+    padding: 10px 20px;
+    background: #089da1;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+
+.icon1 button:hover {
+    background-color: teal;
+}
+
+.icon2 button {
+    padding: 10px 20px;
+    background: #089da1;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 33px;
+
+}
+
+.icon2 button:hover {
+    background-color: teal;
+}
+.about_btn{
+    padding: 10px 20px;
+    background: #089da1;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 33px;
+}
+.about_btn:hover{
+     background-color: teal;
+}
+.about_btn1{
+    padding: 10px 20px;
+    background: #089da1;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 52px;
+}
+.about_btn:hover{
+     background-color: teal;
+}
+
+#border1{
+    border: 2px solid black;
+    margin-right: 28%;
+    margin-left: 20% ;
+    padding-left: 21px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+}
+#border2{
+    border: 2px solid black;
+    margin-right: 28%;
+    margin-left: 18%;
+    margin-top: 16%;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#border3{
+    border: 2px solid black;
+     margin-right: 35%;
+    margin-left: 1%;
+    margin-top: 18%;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#border4{
+    border: 2px solid black;
+    margin-right: 39%;
+    margin-left: -14%;
+    margin-top: 18%;
+    padding-left: 21px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pagination {
+    text-align: center;
+}
+
+.page-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #089da1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.page-btn:hover {
+    background-color: teal;
+}

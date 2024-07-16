@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    text-align: left;
+}
+.container {
+    position: relative;
+    top: 110px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+h1 {
+    color: teal;
+}
+p {
+    font-size: 18px;
+}

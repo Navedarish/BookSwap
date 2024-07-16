@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+.login-form {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 1px solid #089da1;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #777;
+    pointer-events: none;
+    transition: transform 0.3s, font-size 0.3s;
+}
+
+input:focus + label,
+input:valid + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+}
+.forgot-password {
+   border : none;
+   background-color: transparent;
+   outline: none;
+   font-weight: 450;
+   cursor: pointer;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+.box form p{
+    margin-top: 1%;
+    margin-left: 60%;
+}
+.box form p a{
+    text-decoration: none;
+    color: red;
+}
+.box form p a:hover{
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    background-color: #089da1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:teal;
+}
